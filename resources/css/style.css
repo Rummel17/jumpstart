@@ -1,0 +1,270 @@
+body, html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  display: flex;
+  flex-flow: column;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.max--width{
+  max-width: 1980px;
+}
+
+/* fonts & font-colors */
+/* latin */
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(font/OpenSans-Regular.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(font/OpenSans-SemiBold.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  /* truetype is for the ttf format, the best performance is woff2 and format woff2 but it is not supported widly yet */
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(font/OpenSans-Bold.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(font/Monoton-Regular.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --main-ft-color777: #777;
+  --main-ft-colorblue: #399bd1;
+  --maintext-ft: rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron-fluid h1 {
+  text-align: center;
+  font-family: 'Monoton';/* you cannto change the color for the font unles you use the jumbotron class in the selector */
+  font-size: 7rem;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  line-height: 1.4;
+  color: white;
+  font-size: 1.25rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+footer h2 {
+  color: #333;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  text-shadow: none;
+  margin: 0rem 0rem 1.5rem 0rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--main-ft-colorblue);
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+.textbox h4 {
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+  margin: 0;
+}
+.textbox p, .textbox ul li {
+  font-size: .9375rem;
+  line-height: 1.4rem;
+  color: #666;
+}
+.textbox ul li {
+  color: #888;
+}
+.textbox p, .textbox ul {
+  margin-top: 0.5rem;
+}
+
+/* navbar section */
+
+.container-fluid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.row {
+  margin: 0;
+  padding: 0;
+}
+.d-flex {display: flex;}
+.flex-row{flex-flow: row;}
+.flex-column{flex-flow: column;}
+.justify-content-center{justify-content: center;}
+.justify-content-between{justify-content: space-between;}
+.justify-content-end{justify-content:flex-end;}
+.justify-content-start{justify-content: flex-start}
+.align-items-center {align-items: center;}
+.textalign--center{text-align: center;}
+nav.navbar-default {
+  background-color: white;
+  height:60px;
+  padding: 0rem 1.5rem;
+}
+.ul--margintop {
+  margin-top: 0.5rem;
+}
+li.padding--left {
+  padding-left: 1rem;}
+
+li.hea a {
+  text-decoration: none;
+  color: var(--main-ft-color777);
+}
+li {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+/* path must be written entirly to yield result */
+ul.nav.navbar-nav.d-flex.flex-row.ul--margintop li.hea.active a {
+  color:var(--main-ft-colorblue);
+  background-color: white;
+}
+
+ul.nav.navbar-nav.d-flex.flex-row.ul--margintop li.hea.padding--left a:hover,
+ul.nav.navbar-nav.d-flex.flex-row.ul--margintop li.hea.active a:hover {
+  color:var(--main-ft-colorblue);
+}
+
+
+/* jumbotron */
+.container--width {
+    width: 51.3rem;
+}
+
+.jumbotron-bike {
+  background-image: url("../images/jumbotron-bike.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron-beer {
+  background-image: url("../images/jumbotron-beer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron-flowers {
+  background-image: url("../images/jumbotron-flowers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron-duffel {
+  background-image: url("../images/jumbotron-duffel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron-fluid {
+  margin-top: 60px;
+  padding: 11.85rem 0rem;
+  box-sizing: border-box;
+}
+
+.btn {
+  font-size: 1rem;
+}
+
+.btn--margintop {margin-top: 2.8rem;}
+.jumbotron-fluid .container-fluid .btn {
+  text-align: center;
+  padding: 1.1rem 0rem;
+  background-color: var(--main-ft-colorblue);
+  width: 9rem;
+  box-shadow: 0 0 12px rgba(0, 0 ,0 , 0.5);
+}
+
+.jumbotron-fluid .container-fluid .btn:hover {
+  box-shadow: 0 0 12px rgba(0, 0 ,0 , 0.9);
+}
+.jumbotron-fluid .container-fluid .btn:active {
+  box-shadow: 0 0 12px rgba(0, 0 ,0 , 0.5);
+}
+
+/* main section */
+.row {
+  width: 80%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+
+}
+.col-sm-6 {
+  flex: 1 1 50%;
+}
+.col-sm-3 {
+  flex: 1 1 25%;
+}
+.headline {
+  margin: 2rem 0rem;
+}
+
+h4 span {
+  color: var(--main-ft-colorblue);
+}
+
+.col-sm-4 {
+  flex: 1 1 33%;
+}
+
+.image-container{
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+.image-container--sm {
+  height: 160px;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+  transition: all 500ms ease 0ms;
+}
+
+.image-container img:hover {
+  opacity: 1;
+  transform: scale(1.3, 1.3)
+}
+
+.textbox--paddingtop {
+  padding-top: 1.5rem;
+}
+
+/* footer section */
+
+footer {
+  background-color: #f3f3f3;
+  padding: 5.2rem 0rem;
+}
+
+.container--width--sm {width: 42rem;}
