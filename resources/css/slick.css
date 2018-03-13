@@ -10,25 +10,26 @@ html, body {
 }
 
 .slider {
-    width: 90%;
-    margin: 100px auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .slick-slide {
-  margin: 0px 20px;
+  margin: 0px 0px;
 }
 
 .slick-slide img {
   width: 100%;
 }
 
+.button.slick-prev.slick-arrow,
+.button.slick-next.slick-arrow {
+    display: none;
+}
 .slick-prev:before,
 .slick-next:before {
-  color: blue;
-  font-size: 40px;
-}
-.slick-prev.slick-arrow:before{
-  color:;
+  display: none;
 }
 
 
@@ -49,7 +50,6 @@ html, body {
 .slick-slider
 {
     position: relative;
-
     display: block;
     box-sizing: border-box;
 

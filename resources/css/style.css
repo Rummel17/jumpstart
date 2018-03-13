@@ -127,6 +127,9 @@ nav.navbar-default {
   height:60px;
   padding: 0rem 1.5rem;
 }
+.navbar {
+  margin-bottom: 0;
+}
 .ul--margintop {
   margin-top: 0.5rem;
 }
@@ -164,28 +167,32 @@ ul.nav.navbar-nav.d-flex.flex-row.ul--margintop li.hea.active a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 600px;
 }
 .jumbotron-beer {
   background-image: url("../images/jumbotron-beer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 600px;
 }
 .jumbotron-flowers {
   background-image: url("../images/jumbotron-flowers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 600px;
 }
 .jumbotron-duffel {
   background-image: url("../images/jumbotron-duffel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 600px;
 }
 .jumbotron-fluid {
   margin-top: 60px;
-  padding: 11.85rem 0rem;
+  padding: 7.85rem 0rem;
   box-sizing: border-box;
 }
 
