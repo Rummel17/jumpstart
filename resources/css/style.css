@@ -103,6 +103,10 @@ h3 {
 }
 
 /* navbar section */
+.pos-f-t {
+  display: none;
+}
+
 
 .container-fluid {
   width: 100%;
@@ -157,7 +161,7 @@ ul.nav.navbar-nav.d-flex.flex-row.ul--margintop li.hea.active a:hover {
 }
 
 
-/* jumbotron */
+/* jumbotron carousle*/
 .container--width {
     width: 51.3rem;
 }
@@ -252,7 +256,7 @@ h4 span {
   height: 160px;
 }
 .image-container img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   opacity: 0.8;
   transition: all 500ms ease 0ms;

@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" media="(max-width:801px)" href="resources/css/max-width470px.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/favicon.png">
   </head>
-  <body class="max--width">
+  <body>
     <header>
 
-      <nav class="navbar navbar-default navbar-fixed-top d-flex flex-row justify-content-between">
+      <nav class="navbar navbar-default navbar-fixed-top d-flex flex-row justify-content-between nav--hidden">
         <div class="container-fluid d-flex flex-row align-items-center">
           <ul class="nav navbar-nav d-flex flex-row ul--margintop flex-470">
             <li class="hea active"><a href="#">Explore</a></li>
@@ -25,6 +25,25 @@
           <img src="./resources/images/logo.png">
         </div>
       </nav>
+
+      <div class="pos-f-t">
+
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <ul class="nav navbar-nav d-flex flex-row ul--margintop flex-470">
+              <li class="hea active"><a href="#">Explore</a></li>
+              <li class="hea padding--left margin--bottom"><a href="#test">Start a project</a></li>
+              <li class="hea padding--left"><a href="#">About us</a></li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img src="./resources/images/hamburger.png"></span>
+          </button>
+        </nav>
+
+      </div>
 
       <div class="carousel">
         <div class="autoplay slider">
