@@ -47,12 +47,14 @@
   nav.navbar.navbar-dark.bg-dark {
     height:20px;
   }
-  .navbar-toggler-icon img{
-    border-radius: 3px;
-  }
   .navbar-dark {
       margin-top: 1rem;
   }
+
+  .navbar-toggler {
+  border: none;
+  outline: none;/* this removes the orange boarder around the hamburger */
+}
 
 /* jumbotron carousel section */
   .container--width, .container--width--sm, .jumbotron  {
